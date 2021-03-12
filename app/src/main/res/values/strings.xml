@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Simulatorbomzha</string>
+    <string name="genergy">Энергия:</string>
+    <string name="gmoney">Деньги:</string>
+    <string name="start">Старт</string>
+    <string name="sleep">Спать</string>
+    <string name="eat">Поесть</string>
+    <string name="play">Развлечься</string>
+    <string name="communicate">Пообщаться</string>
+    <string name="infosleep">Вы уже выспались!</string>
+    <string name="golodtxt">Голод:</string>
+    <string name="gosugtxt">Досуг:</string>
+    <string name="Obchenietxt">Общение:</string>
+    <string name="exitbtn">Выйти</string>
+    <string name="homebtn">Дом</string>
+    <string name="shopbtn">Магазин</string>
+    <string name="inventarbtn">Инвентарь</string>
+    <string name="jobbtn">Заработок</string>
+    <string name="apartmentbtn">Недвижимость</string>
+    <string name="potrebnostitxt">Потребности</string>
+    <string name="statistictxt">Статистика</string>
+    <string name="healthtxt">Здоровье:</string>
+
+</resources>

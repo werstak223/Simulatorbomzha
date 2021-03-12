@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/lefttool_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genergy"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fenergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/midtool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/healthtxt"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fhealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/righttool_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gmoney"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/fmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/potrebnostitxt"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/one1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/golodtxt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gosugtxt" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Obchenietxt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fgolod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/fdosug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/fobchenie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/statistictxt"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/eatbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/eat" />
+
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/communicatebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/communicate" />
+
+            <Button
+                android:id="@+id/sleepbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="@string/homebtn" />
+
+        <Button
+            android:id="@+id/shopbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="@string/shopbtn" />
+
+        <Button
+            android:id="@+id/apartmentbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="@string/apartmentbtn" />
+
+        <Button
+            android:id="@+id/zarabotokbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="@string/jobbtn" />
+
+        <Button
+            android:id="@+id/inventarbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="@string/inventarbtn" />
+
+        <Button
+            android:id="@+id/exitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:text="@string/exitbtn" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
